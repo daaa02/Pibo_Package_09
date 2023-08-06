@@ -54,7 +54,7 @@ class Etiquette():
                 
         
     def Cough(self):
-        cm.tts(bhv="do_suggestion_L", string=f"2번 카드를 파이보에게 보여줘!")
+        # cm.tts(bhv="do_suggestion_L", string=f"2번 카드를 파이보에게 보여줘!")
         
         # while True:         
         #     time.sleep(2)
@@ -71,7 +71,7 @@ class Etiquette():
         # 2.1 카드 대화
         time.sleep(4)   # QR 인식 안 된다고 해서 인식한 척 sleep 4초
             
-        pibo = cm.tts(bhv="do_question_L", string="이 카드의 어린이는 무엇을 잘못했을까?")
+        pibo = cm.tts(bhv="do_question_L", string="2번 카드의 어린이는 무엇을 잘못했을까?") # 이 카드의 -> 2번 카드의
         answer = cm.responses_proc(re_bhv="do_question_L", re_q="이 카드의 어린이는 무엇을 잘못했을까?",
                                    neg_bhv="do_suggestion_S", neg="같이 다시 한번 볼까?",
                                    neu_bhv="do_suggestion_S", neu="같이 다시 한번 볼까?")    
