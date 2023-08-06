@@ -69,7 +69,7 @@ class Etiquette():
         #         continue
         
         # 2.1 카드 대화
-        time.sleep(4)   # QR 인식 안 된다고 해서 인식한 척 sleep 4초
+        # time.sleep(4)   # QR 인식 안 된다고 해서 인식한 척 sleep 4초
             
         pibo = cm.tts(bhv="do_question_L", string="2번 카드의 어린이는 무엇을 잘못했을까?") # 이 카드의 -> 2번 카드의
         answer = cm.responses_proc(re_bhv="do_question_L", re_q="이 카드의 어린이는 무엇을 잘못했을까?",
